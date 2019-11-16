@@ -1,0 +1,97 @@
+/* Layout */
+
+html, body, aside, .chatbox {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	display: flex;
+	flex: 1 1 0;
+	flex-flow: row nowrap;
+}
+
+/* Side bar */
+
+aside {
+	display: flex;
+	flex: 0 0 25%;
+	flex-flow: column nowrap;
+	border-right: .2em solid gray;
+}
+
+nav {
+	margin: 1% 0;
+	padding: 0;
+	display: flex;
+	flex: 0 1 0;
+	flex-flow: row nowrap;
+	justify-content: space-evenly;
+}
+
+nav button, .inputc button {
+	border: .2em solid gray;
+	border-radius: 1em;
+	background: #ccc;
+}
+nav button:hover {
+	background: #ddd;
+}
+nav button:active {
+	background: #aaa;
+}
+
+nav button {
+	width: 3.5em;
+	height: 3.5em;
+}
+
+footer {
+	text-align: center;
+	margin-top: auto;
+}
+
+/* Chatbox */
+
+.banner {
+	height: 10%;
+	border-bottom: .2em solid gray;
+}
+
+.mainwindow {
+	display: flex;
+	flex: 1 1 0;
+	flex-flow: column nowrap;
+}
+
+#n_chat {
+	height: 80%;
+	overflow-y: scroll;
+}
+
+#n_chat .message {
+	margin: 1%;
+}
+
+#n_chat .message-irc {
+
+
+}
+
+/* Chat input */
+
+.inputc {
+	display: flex;
+	flex: 1 1 0;
+	flex-flow: row nowrap;
+	padding: 1%;
+}
+
+#n_inputbox {
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+	border: 6px solid lightgray;
+	border-radius: 1em;
+	padding: .5em;
+}

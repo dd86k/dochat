@@ -1,0 +1,13 @@
+doctype html
+html
+	head
+		title dochat
+		link(rel="icon", type="image/png", href="favicon.png")
+	body
+		p 
+			span.ehash #{error.code}
+			span.msg #{error.message}
+		- if (error.code >= 500)
+			pre.desc= error.debugMessage 
+		- else
+			p.desc If you think this is the server's fault, contact an admin!

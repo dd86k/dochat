@@ -1,0 +1,13 @@
+include layout
+
+body
+nav
+	a(href="/") Home
+	a(href="/about") About
+div.chatarea
+	div#msgbox
+	div
+		textarea#msginput
+		button(onClick="sendMsg();") Send
+
+script(src="js/dochat.js")

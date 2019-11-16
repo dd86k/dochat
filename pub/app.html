@@ -1,0 +1,49 @@
+<!doctype html>
+<html><head>
+	<title>dochat</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/dochat.css">
+	<link rel="stylesheet" href="css/dochat-day.css">
+	<link rel="stylesheet" href="css/feather.css">
+	<link rel="icon" type="image/png" href="favicon.png">
+</head><body>
+<aside>
+	<nav>
+		<button class="tooltip bottom" aria-label="Search">
+			<span class="icon icon-search"></span>
+		</button>
+		<button class="tooltip bottom" aria-label="Server info">
+			<span class="icon icon-info"></span>
+		</button>
+		<button class="tooltip bottom" aria-label="Client settings">
+			<span class="icon icon-gear"></span>
+		</button>
+		<button class="tooltip bottom" aria-label="Help">
+			<span class="icon icon-help"></span>
+		</button>
+	</nav>
+	<div class="profile">
+		<img id="n_avatar"/>
+		<div id="n_username"></div>
+	</div>
+	<label>Channels</label>
+	<div id="n_channels">
+
+	</div>
+	<footer>
+		<p>dochat-client v0.0.0 • <a target="_blank" href="/about">About</a></p>
+	</footer>
+</aside>
+<div class="mainwindow">
+	<div class="banner">
+		banner
+	</div>
+	<div id="n_chat">
+	</div>
+	<div class="inputc">
+		<textarea id="n_inputbox" rows="1"></textarea>
+	</div>
+	<div id="n_typenotif"></div>
+</div>
+<script src="js/dochat.js"></script>
+</body></html>

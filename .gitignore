@@ -1,0 +1,25 @@
+# DUB
+.dub
+docs.json
+__dummy.html
+docs/
+dochat.so
+dochat.dylib
+dochat.dll
+dochat.a
+dochat.lib
+dochat-test-*
+*.exe
+*.o
+*.obj
+*.lst
+*.dll
+*.lib
+dub.selections.json
+
+# icons and stuff not currently in use
+ressources
+
+# dochat settings
+dochat.sdl
+_dochat.sdl

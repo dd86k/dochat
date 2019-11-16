@@ -1,0 +1,25 @@
+name "dochat"
+description "Self-host team chat platform."
+authors "dd86k"
+copyright "Copyright © 2019, dd86k"
+license "BSD 3clause"
+#dependency "d2sqlite3" version="~>0.18"
+dependency "sdlang-d" version="~>0.10"
+#dependency "vibe-d-postgresql" version="~>2.0"
+targetType "executable"
+
+# vibe.d backend
+configuration "backend-vibed" {
+	versions "Backend_vibed"
+	dependency "vibe-d" version="~>0.8"
+}
+
+# ligthttp backend
+configuration "backend-lighttp" {
+	versions "Backend_lighttp"
+}
+
+# ddhttp backend
+configuration "backend-ddhttp" {
+	versions "Backend_ddhttp"
+}
